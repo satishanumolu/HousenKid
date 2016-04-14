@@ -1,0 +1,134 @@
+body {
+    background:#fff;
+    font-family: "Bell MT";
+}
+
+@font-face {
+    font-family: arJulian;
+    src:url(ARJULIAN.ttf);
+}
+.panel-default {
+    border-color:#fff;
+    box-shadow: 0px 0px 0px;
+}
+.panel-default > .panel-heading {
+   background: orangered;
+   color:white;
+    font-family: arJulian;
+   font-weight:bold;
+   font-size:20px;
+    text-align: center;
+    border-radius: 5px;
+ }
+.searchtext {
+    padding:0px;
+}
+.search,.viewall {
+    background: orangered;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: arJulian;
+    padding: 2px 15px;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+.search:hover,.viewall:hover {
+    color:white;
+}
+/*.textbox:hover {
+    opacity:1;
+}*/
+.textbox {
+    width:80%;
+    height:80%;
+    position:absolute;
+    top:1%;
+    left:10%;
+    opacity:0;
+    border-radius:5px;
+    background:#FFF;
+    /*background-color: rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 15px 2px rgba(255,255,255,.75);
+    box-shadow: 0px 0px 15px 2px rgba(255,255,255,.75);
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;*/
+}
+.item .title p {
+    color:black;
+    font-size: 15px;
+    font-weight:bold;
+    position:absolute;
+    left:3%;
+    top:30%;
+}
+.item .amazon{
+    position:absolute;
+    left:20%;
+    top:70%;
+    background: orangered;
+    font-family: arJulian;
+    font-weight: bold;
+
+}
+.item .productDetails{
+    position:absolute;
+    left:60%;
+    top:70%;
+    background: #00ADEE;
+    font-family: arJulian;
+    font-weight: bold;
+}
+.item {
+    /*width:31%;*/
+    height:235px;
+    background:white;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    margin-top: 3%;
+    margin-right: -2%;
+    margin-left: -5%;
+    position: relative;
+}
+.image {
+    max-height:100%;
+    max-width:100%;
+    padding:15px;
+}
+.image:hover .textbox{
+    opacity: 0.8;
+}
+.item p {
+    color:#00ADEE;
+    font-size:25px;
+    font-weight:bold;
+    position:absolute;
+    bottom:0;
+    left:35%;
+}
+.glyphicon-star,.glyphicon-th{
+    padding-right:5px;
+}
+.offers img {
+    width:100%;
+    height:100%;
+    margin-bottom: 3%;
+    border: 1px solid #eee;
+}
+.categories ul {
+    list-style:none;
+}
+.categories li {
+    margin:0px 0px 5px -40px;
+}
+.categories li a{
+    text-decoration: none;
+    color:#333;
+    font-size: 20px;
+}
+.categories li:hover {
+    background:#eee;
+}
+.video {
+    margin-bottom:1%;
+}

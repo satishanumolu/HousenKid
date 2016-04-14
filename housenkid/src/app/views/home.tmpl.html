@@ -1,0 +1,100 @@
+<div ng-controller="HomeController as homeVm" class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-th"></span>
+                    <span class="text-center">CATEGORIES</span>
+                </div>
+                <div class="panel-body categories">
+                    <ul>
+                        <li><a href="">Appliances</a></li>
+                        <li><a href="">Arts, Crafts and Sewing</a></li>
+                        <li><a href="">Automotive</a></li>
+                        <li><a href="">Baby Products</a></li>
+                        <li><a href="">Beauty</a></li>
+                        <li><a href="">Books</a></li>
+                        <li><a href="">Cellphones and Accessories</a></li>
+                        <li><a href="">Clothing, Shoes & Jewelery</a></li>
+                        <li><a href="">Electronics</a></li>
+                        <li><a href="">Furniture</a></li>
+                        <li><a href="">Grocery & Gourment Food</a></li>
+                        <li><a href="">Health & Personal Care</a></li>
+                        <li><a href="">Home & Gifts</a></li>
+                        <li><a href="">Home & Kitchen</a></li>
+                        <li><a href="">Industrial & Scientific</a></li>
+                        <li><a href="">Musical Instruments</a></li>
+                        <li><a href="">Office Products</a></li>
+                        <li><a href="">Patio, Lawn & Garden</a></li>
+                        <li><a href="">Pet Supplies</a></li>
+                        <li><a href="">Spine</a></li>
+                        <li><a href="">Sports & Outdoors</a></li>
+                        <li><a href="">Tools & Home Improvement</a></li>
+                        <li><a href="">Toys & Games</a></li>
+                        <li><a href="">Appliances</a></li>
+                        <li><a href="">Arts, Crafts and Sewing</a></li>
+                        <li><a href="">Automotive</a></li>
+                        <li><a href="">Baby Products</a></li>
+                        <li><a href="">Beauty</a></li>
+                        <li><a href="">Books</a></li>
+                        <li><a href="">Cellphones and Accessories</a></li>
+                        <li><a href="">Clothing, Shoes & Jewelery</a></li>
+                        <li><a href="">Electronics</a></li>
+                        <li><a href="">Furniture</a></li>
+                        <li><a href="">Grocery & Gourment Food</a></li>
+                        <li><a href="">Health & Personal Care</a></li>
+                        <li><a href="">Home & Gifts</a></li>
+                        <li><a href="">Home & Kitchen</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="text-center">OFFERS</span>
+                </div>
+                <div class="panel-body offers">
+                    <img class="img-responsive" src="/housenkid/src/app/images/50% off.png">
+                    <img class="img-responsive" src="/housenkid/src/app/images/doorbusters.png">
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-9">
+            <div class="text-center video">
+                <iframe width="80%" height="400" src="https://www.youtube.com/embed/_EtoUqI4F14?autoplay=1&rel=0&showinfo=0" loop="1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="text-center">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group-lg">
+                        <div class="col-xs-12 col-sm-9 col-md-9  searchtext">
+                            <input type="text" ng-model="homeVm.keyword" class="form-control" placeholder="Search Appliances">
+                        </div>
+                        <button ng-click="homeVm.search()" type="submit" class="btn btn-md search">Search</button>
+                        <button type="submit" class="btn btn-md viewall">View All</button>
+                    </div>
+                </form>
+            </div>
+            <div infinite-scroll="homeVm.loadMore()" infinite-scroll-distance="0" infinite-scroll-disabled="homeVm.infiniteScrollFlag">
+                <div class="col-xs-12 col-md-4 text-center" ng-repeat="item in homeVm.items ">
+                    <div class="item">
+                        <div class="image">
+                            <img ng-src="{{item.MediumImageURL}}" alt="{{item.ProductTitle}}">
+                            <div class="textbox">
+                                <div class="title">
+                                    <!--<p>{{ item.ProductTitle | html | limitTo:70:15  }}{{item.ProductTitle.length > 70 ? '...' : ''}}</p>-->
+                                    <p>
+                                        <span ng-bind-html="item.ProductTitle | limitTo:40:15 | html"></span>
+                                        <span>{{item.ProductTitle.length > 55 ? '...' : ''}}</span>
+                                    </p>
+                                </div>
+                                <a target="_blank" href="http://www.amazon.com/gp/product/{{item.ASIN}}"class="btn btn-sm btn-warning amazon">Amazon</a>
+                                <a class="btn btn-sm btn-primary productDetails">Details</a>
+                            </div>
+                        </div>
+                        <p class="text-center">${{item.HNKPrice}}</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

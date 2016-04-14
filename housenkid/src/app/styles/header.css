@@ -1,0 +1,96 @@
+.navbar-inverse {
+    height:80px;
+    background:#fff;
+    border-color:#fff;
+    border-radius:0px;
+}
+.navbar-brand img{
+    height:60px;
+    margin-top:-5px;
+}
+.navbar-nav {
+    margin-top:25px;
+}
+.navbar-nav li {
+    margin: 0px 10px;
+}
+.navbar-inverse .navbar-nav > li > a{
+    font-family: arJulian;
+    font-weight: bold;
+    color:black;
+    font-size:18px;
+    padding:5px 15px 5px 15px;
+}
+.navbar-inverse .navbar-nav .select {
+    background: orangered;
+    color:black;
+    border:1px solid black;
+    border-radius:2px;
+}
+/*.navbar-inverse .navbar-nav li:hover{
+    background: orangered;
+    color:black;
+    border:1px solid black;
+    border-radius:2px;
+}*/
+.navbar-inverse .navbar-nav > li > a:focus{
+    background: orangered;
+    color:black;
+    border:1px solid black;
+    border-radius:2px;
+}
+.navbar-inverse .navbar-nav > li > a:hover{
+    background: orangered;
+    color:black;
+    border:1px solid black;
+    border-radius:2px;
+}
+/*.navbar-right {
+    margin-top:10px;
+}*/
+.navbar-right li {
+    margin: 0px 20px;
+}
+.navbar-inverse .navbar-right li:hover{
+    background: none;
+    border:none;
+}
+.ebay {
+    height:60px;
+    width:80px;
+    margin-right:20px;
+}
+.ebay span img{
+    height:30px;
+    width:80px;
+    padding-left:10px;
+}
+.ebay a {
+    font-family: arJulian;
+    font-size:20px;
+    text-decoration: none;
+    font-weight: bold;
+    color:#B6279E;
+}
+.fa-phone {
+    font-size:30px;
+    color:orangered;
+}
+.phone {
+    padding:5px 15px 5px 15px;
+    font-size:22px;
+    font-weight: bold;
+    color:black;
+}
+.share{
+    float:right;
+}
+.fa-facebook,.fa-google-plus,.fa-yelp {
+    margin:3px;
+    height:30px;
+    padding:5px 10px 0px 10px;
+    font-size:20px;
+    background: #00ADEE;
+    color:white;
+    border-radius:2px;
+}

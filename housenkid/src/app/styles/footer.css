@@ -1,0 +1,72 @@
+.navbar-bottom {
+    height:190px;
+    background:#fff;
+    border-color:#fff;
+    border-radius:0px;
+    margin-top:10px;
+    margin-bottom:0px;
+}
+.navbar-bottom .navbar-nav {
+    width:100%;
+}
+/*.newsletter {
+    padding:0px 170px 0px 20px;
+}*/
+.subscribe {
+    background:#00ADEE;
+}
+/*.contactus {
+    padding:0px 0px 0px 220px;
+}*/
+.getconnected .fa-facebook {
+    margin:10px;
+    height:60px;
+    width:60px;
+    padding:10px 1px 8px 15px;
+    font-size:40px;
+    background: #00ADEE;
+    color:white;
+    border-radius:5px;
+}
+.getconnected .fa-google-plus{
+    margin:10px;
+    height:60px;
+    width:60px;
+    padding:10px 1px 8px 1px;
+    font-size:40px;
+    background: #00ADEE;
+    color:white;
+    border-radius:5px;
+}
+.getconnected .fa-yelp {
+    margin:10px;
+    height:60px;
+    width:60px;
+    padding:10px 15px 8px 15px;
+    font-size:40px;
+    background: #00ADEE;
+    color:white;
+    border-radius:5px;
+}
+.heading {
+    color:orangered;
+    font-family: arJulian;
+    font-weight:bold;
+    font-size:18px;
+}
+.form-group label {
+    color:#777;
+    font-weight:bold;
+}
+.contactus .address p{
+    color:#777;
+    font-weight:bold;
+    margin:0px;
+}
+.contactus a{
+    color:#00ADEE;
+    text-decoration:none;
+}
+.promotion,.address {
+    padding:0px 0px 0px 50px;
+}
